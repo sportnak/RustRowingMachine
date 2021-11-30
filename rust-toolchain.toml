@@ -1,0 +1,5 @@
+[toolchain]
+channel = "nightly-2021-01-07"
+components = [ "rust-src" ]
+targets=["avr-unknown-gnu-atmega328]
+profile = "minimal"
