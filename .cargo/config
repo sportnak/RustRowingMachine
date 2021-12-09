@@ -2,7 +2,10 @@
 target = "./avr-atmega328p.json"
 
 [target.'cfg(target_arch = "avr")']
-runner = "ravedude uno -cb 57600"
+runner = "avrdude -c arduino -b 57600"
+
+[target.armv7-unknown-linux-gnueabihf]
+linker = "arm-linux-gnueabihf-gcc"
 
 [unstable]
 build-std = ["core"]

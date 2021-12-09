@@ -6,6 +6,8 @@
 
 use ufmt::{derive::uDebug, uwrite};
 use arduino_hal::prelude::*;
+use arduino_hal::spi;
+use embedded_hal::spi::FullDuplex;
 use panic_halt as _;
 use half::prelude::*;
 
